@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/post-form-style.css" />
-    <title>Document</title>
-    <script type="module" src="javascript/index.js"></script>
+    <script type="module" src="/javascript/edit.js"></script>
     <script type="module" src="/javascript/auth-ui.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/post-form-style.css">
+    <title>edit post</title>
   </head>
   <body>
     <nav>
@@ -32,14 +32,25 @@
         <a href="/html/login.html" data-auth="logged-out">Login</a>
       </div>
     </nav>
-
-    <section class="hero-section">
-      <img src="images/ducks.png" alt="ducks in a row" class="ducks" />
-      <h1>Duck feed</h1>
-      <a href="/html/create-post.html" class="button-style">+ Create post</a>
+    
+<section>
+  <h1 class="center-text">Edit your duck post:</h1>
+    <form id="editForm">
+      <div class="row-form">
+        <label for="title">Title of post:</label>
+        <input type="text" id="title" placeholder="Add the title" required />
+      </div>
+      <div class="row-form">
+        <label for="body">Your post:</label>
+        <textarea
+          id="body"
+          rows="10"
+          cols="30"
+          placeholder="add your text here"
+        ></textarea>
+      </div>
+      <button type="submit" class="button-style">save</button>
+    </form>
     </section>
-    <input type="text" id="searchInput" placeholder="search post" />
-
-    <div id="display-container"></div>
   </body>
 </html>

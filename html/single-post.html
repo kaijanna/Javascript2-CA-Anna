@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/post-form-style.css" />
-    <title>Document</title>
-    <script type="module" src="javascript/index.js"></script>
+    <script type="module" src="/javascript/single-post.js"></script>
     <script type="module" src="/javascript/auth-ui.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/post-form-style.css" />
+    <title>single post</title>
   </head>
   <body>
     <nav>
@@ -32,14 +32,13 @@
         <a href="/html/login.html" data-auth="logged-out">Login</a>
       </div>
     </nav>
+    <section id="viewPostSection">
+      <h1>Duck post!</h1>
+      <div id="singlePost" class="singel-post"></div>
 
-    <section class="hero-section">
-      <img src="images/ducks.png" alt="ducks in a row" class="ducks" />
-      <h1>Duck feed</h1>
-      <a href="/html/create-post.html" class="button-style">+ Create post</a>
+      <div id="editBt" class="button-box"></div>
+      <div id="deleteBt" class="button-box"></div>
+      <a href="/index.html" class="button-style">← Back to Duck Feed</a>
     </section>
-    <input type="text" id="searchInput" placeholder="search post" />
-
-    <div id="display-container"></div>
   </body>
 </html>

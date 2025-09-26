@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/post-form-style.css" />
-    <title>Document</title>
-    <script type="module" src="javascript/index.js"></script>
+    <script type="module" src="/javascript/login.js"></script>
     <script type="module" src="/javascript/auth-ui.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/post-form-style.css" />
+    <title>login page</title>
   </head>
   <body>
     <nav>
@@ -32,14 +32,27 @@
         <a href="/html/login.html" data-auth="logged-out">Login</a>
       </div>
     </nav>
-
-    <section class="hero-section">
-      <img src="images/ducks.png" alt="ducks in a row" class="ducks" />
-      <h1>Duck feed</h1>
-      <a href="/html/create-post.html" class="button-style">+ Create post</a>
+    <section>
+      <h1 class="center-text">welcome back! login here:</h1>
+      <form id="login-form">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="firstname.secondname@stud.noroff.no"
+        />
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          required
+          minlength="8"
+        />
+        <button>Submit</button>
+      </form>
     </section>
-    <input type="text" id="searchInput" placeholder="search post" />
-
-    <div id="display-container"></div>
   </body>
 </html>

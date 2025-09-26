@@ -1,0 +1,50 @@
+#profile {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#profile img {
+  
+  
+  width: 200px;
+  height: auto;
+}
+
+#actions {
+  margin-top: 1rem;
+}
+
+#actions button {
+  margin: 0.25rem;
+}
+
+#followersList,
+#followingList {
+  list-style: none;
+  padding: 0;
+}
+
+#followersList li,
+#followingList li {
+  padding: 0.25rem 0;
+}
+
+#followersList a,
+#followingList a {
+  color: #0758aa;
+  text-decoration: none;
+}
+#followersList a:hover,
+#followingList a:hover {
+  text-decoration: underline;
+}
+
+#userPosts, .heading {
+  max-width: 800px;      
+  margin: 0 auto;        
+  padding: 1rem;         
+}
