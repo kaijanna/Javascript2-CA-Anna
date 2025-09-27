@@ -1,0 +1,90 @@
+@media (max-width: 600px) {
+  main,
+  section,
+  #display-container,
+  #userPosts,
+  .heading {
+    max-width: 100%;
+    padding: 0.75rem;
+    margin: 0 auto;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    padding: 0.5rem 1rem;
+    display: grid;
+    gap: 0.5rem;
+    justify-content: stretch;
+  }
+  .nav-left,
+  .nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  #searchInput {
+    max-width: 100%;
+    margin: 0.75rem 0;
+  }
+   button, .button-style, button[type="submit"] {
+    width: auto;          
+    max-width: 100%;      
+    text-align: center;
+    padding: 0.5rem 1rem; 
+    display: inline-block;
+  }
+
+  .ducks,
+  #profile img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .blog-post,
+  #createPostSection,
+  #viewPostSection,
+  #profile,
+  form {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  #editBt a.button-style,
+  #deleteBt button {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #followersList li,
+  #followingList li {
+    padding: 0.35rem 0;
+  }
+
+  .welcome-box {
+    max-width: 100%;
+    padding: 1.25rem;
+    margin: 1rem auto;
+  }
+
+  .nav-logo {
+    width: 120px;  
+  }
+
+  
+  #profile img,
+  #avatarImg {
+    width: 120px;  
+    height: auto;   
+  }
+
+  .ducks {
+    max-width: 100%;
+    height: auto;
+  }
+}

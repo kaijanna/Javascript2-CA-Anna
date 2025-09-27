@@ -5,6 +5,7 @@ import { NOROFF_API_KEY } from "./constants.js";
 
 const displayContainer = document.getElementById("display-container");
 const searchInput = document.getElementById("searchInput");
+const heroSection = document.getElementById("hero");
 
 let allPosts = [];
 
@@ -74,6 +75,24 @@ searchInput.addEventListener("input", (e) => {
 });
 
 async function main() {
+  const accessToken = getFromLocalStorage("accessToken");
+
+  if (!accessToken) {
+    if (heroSection) heroSection.style.display = "none";
+    if (searchInput) searchInput.style.display = "none";
+
+    displayContainer.innerHTML = `
+      <div class="welcome-box">
+        <h2>Welcome to Rubber duck!</h2>
+        <p>Please <a href="/html/login.html">log in</a> to see posts.</p>
+        <p>New here? <a href="/html/register.html">Create an account</a>.</p>
+      </div>
+    `;
+    return;
+  }
+  if (heroSection) heroSection.style.display = "";
+  if (searchInput) searchInput.style.display = "";
+
   allPosts = await fetchPosts();
   generatePosts(allPosts);
 }

@@ -100,3 +100,18 @@ a {
 .center-text{
   text-align: center;
 }
+
+.welcome-box {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 2rem;
+  border: 1px solid #1c221f;
+  border-radius: 6px;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.welcome-box a {
+  font-weight: bold;
+  color: #1c221f;
+  text-decoration: underline;
+}
